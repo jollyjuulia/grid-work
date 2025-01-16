@@ -5,8 +5,7 @@
     gap: 16px;
     width: 100vw;
     height: 100vh;
-    background: url(img/back.jpg);
-    background-size: 100vw;
+   
 }
 
 
@@ -20,7 +19,7 @@
     height: 50vh; */
     overflow-y: scroll;
     /* grid-row: span 3; */
-    grid-area: 3/1/6/3;
+    grid-area: 2/1/6/3;
     padding: 24px;
 }
 
@@ -33,16 +32,17 @@
     /* margin: 24px;
     height: 100vh; */
     overflow-y: scroll;
-    grid-area: 3/5/6/7;
-
+    grid-area: 2/5/6/7;
+    align-items: center;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    
 
 }
 
 .bareface{
-    grid-area:3/3/5/5;
+    grid-area:2/3/5/5;
     display: flex;
     justify-content: center;
 }
@@ -51,16 +51,20 @@
 
 .heading1{
     display: flex;
-    grid-area: 2/1/3/3;
+    grid-area: 1/1/2/3;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+
+    align-items: flex-end;
    
 }
 
 .heading2{
     display: flex;
-    grid-area: 2/5/3/7;
-    align-items: center;
+    flex-direction: row;
+    grid-area: 1/5/2/7;
+    align-items: flex-end;
     justify-content: center;
     /* background-image: url(img/bitten.jpg); */
     
@@ -68,16 +72,20 @@
 
 .heading3{
     display: flex;
-    grid-area: 2/3/3/5;
-    align-items: center;
+    flex-direction: row;
+    grid-area: 1/3/2/5;
+    align-items: flex-end;
     justify-content: center;
    
 }
 
 h2{
     text-align: center;
-    font-family: "WindSong", serif;
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
+    color: grey;
     /* background-image: url(img/side.jpg); */
+    letter-spacing: 9px;
+    font-size: 12px
     
 }
 
@@ -96,7 +104,7 @@ h2{
   h1 {
     font-family:serif;
     text-align: center;
-    font-family:monospace;
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
     color: rgb(170, 167, 160);
     font-size: 50px;
     letter-spacing: 40px;
@@ -116,7 +124,7 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  
+    padding:24px;
     grid-area: 1/1/2/7;
   }
 
@@ -135,7 +143,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img/apple.jpg);
+    /* background-image: url(img/apple.jpg); */
     background-size: 100vw;
     height: 115px 
 }
@@ -171,12 +179,29 @@ h3{
 h4{
     font-family: myFirstFont;
     color: rgba(168, 24, 43, 0.915);
-    font-size: 50px;
+    font-size: 25px;
     text-align: center;
     font-weight: 3px;
 }
 @font-face {
     font-family: myFirstFont;
     src: url(img/JellyJulyShiny-3z4JM.ttf);
-    font-weight: 4px;
+    font-weight: 2px;
   }
+
+body{
+    background: url(img/back.jpg);
+    background-size:  100vw;
+}
+
+
+img{
+    padding: 24px;
+}
+
+@font-family{
+    font-family="hiragino-kaku-gothic-pron", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
